@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Assignment-14-Adasa/">
       <div className="app-container">
         <Navbar />
         <main>
