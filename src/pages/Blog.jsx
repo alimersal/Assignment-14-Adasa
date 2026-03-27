@@ -29,7 +29,7 @@ const Blog = () => {
       setCurrentPage(parseInt(pageParam));
     }
 
-    fetch('/posts.json')
+    fetch(`${import.meta.env.BASE_URL}posts.json`)
       .then(res => res.json())
       .then(data => {
         setPosts(data.posts || data);

@@ -10,7 +10,7 @@ const Home = () => {
   const section4Ref = useRef(null);
 
   useEffect(() => {
-    fetch('/posts.json')
+    fetch(`${import.meta.env.BASE_URL}posts.json`)
       .then(res => res.json())
       .then(data => {
         const posts = data.posts || data;
